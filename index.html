@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ntin Hero Section</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        section{
+            padding: 70px 100px;
+        }
+        .section-top{
+            display: flex;
+            justify-content: space-between;
+        }
+        .part-1{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .part-2{
+            width: 50%;
+        }
+        .section-bottom{
+            margin-top: 50px;
+        }
+        .cards{
+            display: flex;
+             /* gap: 50px; */
+             row-gap: 50px;
+             justify-content: space-between;
+             flex-wrap: wrap;
+
+        }
+        .card{
+            max-width:300px;
+            display: flex;
+            flex-direction:column;
+            height: 400px;
+            align-items: center;
+            margin: auto;
+            justify-content: space-between;
+            /* border: 2px solid red; */
+        }
+        img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+
+        }
+        @media (max-width:600px) {
+            .section-top{
+                flex-direction: column;
+                gap: 50px;
+            }
+            .part-1,.part-2{
+                width: 100%;
+            }
+            .part-1{
+                gap: 30px;
+                align-items: flex-start;
+            }
+            .cards{
+                column-gap: 0px;
+                row-gap: 30px;
+            }
+            section{
+                padding: 70px 20px;
+            }
+
+        }
+        @media (max-width:900px) {
+            .cards{
+                gap:30px
+            }
+        }
+    </style>
+</head>    
+<body>
+    <section>
+        <div class="section-top">
+            <div class="part-1">
+                <h4>this is h4</h4>
+                <h2>Lorem ipsum dolor sit  </h2>
+            </div>
+            <div class="part-2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptatibus cupiditate corporis,
+                    necessitatibus eos natus, iure animi saepe ea dicta accusamus rerum magnam consequuntur nam, harum
+                    ut molestias perferendis praesentium consectetur asperiores neque dolorem? Aliquam perspiciatis
+                    aspernatur, </p>
+            </div>
+        </div>
+        <div class="section-bottom">
+            <div class="cards">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta optio eum a amet veritatis
+                        ducimus aut veniam illum excepturi saepe!</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta optio eum a amet veritatis
+                        ducimus aut veniam illum excepturi saepe!</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta optio eum a amet veritatis
+                        ducimus aut veniam illum excepturi saepe!</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta optio eum a amet veritatis
+                        ducimus aut veniam illum excepturi saepe!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
